@@ -17,14 +17,14 @@ Just to clarify this is an REST API Level 0 implementation - according to [Richa
   <dd>Properties like sprite (y/n) are additional data, that can be included into the resuls (like images).</dd>
 </dl>
 
-| Name | Category | API Key  | Alias  | Values |Description  |  Default Value |  Example  
-| --- |---| --- | ---|---|---|---|--- | --- |
+| Name | Category | API Key  | Alias  | Values |Description  |  Default Value |  Example  |
+| --- |---| --- | ---|---|---|---|--- | 
 |Amount of Random Pokemon| Property | number  | n  | 1-6  | The number of random generated pokemon  | - | `n=5` |
 |  Sprite | Property |  sprites  | s  |  [BooleanList](#booleanlist) | Imagine a Red Rectangle flirting with you furiously | `false` | `s=false`  |
 |Pokemon Region | Pool  | region  | r  | [RegionList](#valid-regions)  | The pokemon region e.g kanto, johto etc. | `all` |  `r=kanto`  |
 |Pokemon Type | Pool| type  |  t |   [TypeList](#valid-types)|    Type of the random pokemons. Only single values are allowed. No concatinations like (water,fire) | `all`| `t=bug` |
-|Overpowered Pokemon | Pool | ubers  |  u |  [BooleanList](#booleanlist) |  Controls if Overpowered Pokémon (not used in standard play) are added into the pool. ||  `false` | `u=true` |
-|Include Not fully envolved Pokemon |  Pool | nfes  |  nf | [BooleanList](#booleanlist)  |  Controls, if Pokemon that are not fully envolved are added into the pool. ||  `false` |  `nf=false` |
+|Overpowered Pokemon | Pool | ubers  |  u |  [BooleanList](#booleanlist) |  Controls if Overpowered Pokémon (not used in standard play) are added into the pool. |  `false` | `u=true` |
+|Include Not fully envolved Pokemon |  Pool | nfes  |  nf | [BooleanList](#booleanlist)  |  Controls, if Pokemon that are not fully envolved are added into the pool. |  `false` |  `nf=false` |
 |Pokemon Nature | Property | natures  |  na |  [BooleanList](#booleanlist) | Adds  nature attributes to the drawn random pokemon |  `false` | `na=true` |
 |Pokemon Alternative Forms |  Pool | forms  |  f | [BooleanList](#booleanlist)  | Allow alternate forms, such as Mega Evolutions.  | `false`  | `f=false` |
 
