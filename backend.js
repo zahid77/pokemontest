@@ -7,21 +7,6 @@ let path = ".";
 const server = http.createServer(function (req, res) {
     path = "." + req.url;
     console.log(`\${req.method} request received at \${req.url}`);
-    // if (req.url === '/html') {
-    //     res.setHeader('Content-Type', 'text/html');
-    //     res.statusCode = 200; // 200 = OK
-    //     displayHTML(res);
-    //     res.end();
-    // } else if (req.url === '/plain') {
-    //     res.setHeader('Content-Type', 'text/plain');
-    //     res.statusCode = 200; // 200 = OK
-    //     res.write("<h1>Demo page</h1>");
-    //     res.end();
-    // } else if (req.url === '/json') {
-    //     res.setHeader('Content-Type', 'application/json');
-    //     res.statusCode = 200; // 200 = OK
-    //     res.write(JSON.stringify({"firstName": "Harry", "lastName": "Potter"}));
-    //     res.end();
     if (req.url === '/') {
          res.setHeader('Content-Type', 'text/html');
          res.statusCode = 200; // 200 = OK
@@ -120,13 +105,4 @@ server.listen(3000, function () {
 function displayHTML(res) {
     let data = fs.readFileSync("./index.html");
     res.write(data);
-    // fs.readFileS('./index.html', null, function (error, data) {
-    //     if (error) {
-    //         res.writeHead(404);
-    //         res.write('Whoops! File not found!');
-    //     } else {
-    //         res.write(data);
-    //     }
-    //     res.end();
-    // });
 }
