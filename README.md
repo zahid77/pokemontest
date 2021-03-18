@@ -1,9 +1,5 @@
 # Random-Pokemon-Generator
 
-This readme will be updated soon.
-
-After some tests, the changes will be merged into the main branch and a wiki for the api will be added.
-
 ## Description
 
 Forked from [Nerdydrews Random Pokemon Generator](https://github.com/nerdydrew/Random-Pokemon-Generator). This is an alternative version which also has an REST API. 
